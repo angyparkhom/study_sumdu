@@ -13,7 +13,7 @@ public class TitlesFrame
   {
     setTitle("Кривые фигуры");
     setDefaultCloseOperation(3);
-    add(new TitlesPanel(78));
+    add(new TitlesPanel(51));
     setSize(350, 350);
     setLocationRelativeTo(null);
   }
