@@ -27,7 +27,11 @@ public class TitlesPanel
     this.animation.setInitialDelay(50);
     this.animation.start();
   }
-  
+
+    /**
+     * Invoked when an action occurs and repaints object
+     * @param arg0 Event that describes the occurred action
+     */
   public void actionPerformed(ActionEvent arg0)
   {
     if (this.is_done) {
@@ -68,7 +72,11 @@ public class TitlesPanel
     }
     this.is_done = true;
   }
-  
+
+    /**
+     * Overrides parent JPanel method to perform custom drawing logic
+     * @param g The original Graphics object
+     */
   public void paintComponent(Graphics g)
   {
     super.paintComponent(g);

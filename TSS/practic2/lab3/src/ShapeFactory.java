@@ -16,7 +16,11 @@ public class ShapeFactory
   public Paint paint;
   public int width = 25;
   public int height = 25;
-  
+
+    /**
+     * Creates a ShapeFactory object for creation different figures
+     * @param shape_type Initial integer value which will be used for figures generation
+     */
   public ShapeFactory(int shape_type)
   {
     this.stroke = new BasicStroke(3.0F);
@@ -76,7 +80,15 @@ public class ShapeFactory
       throw new Error("type is nusupported");
     }
   }
-  
+
+    /**
+     * Creates star figure
+     * @param arms - count of arm of the star
+     * @param center - center coordinates
+     * @param rOuter - outer radius
+     * @param rInner - inner radius
+     * @return Shape object
+     */
   private static Shape createStar(int arms, Point center, double rOuter, double rInner)
   {
     double angle = 3.141592653589793D / arms;

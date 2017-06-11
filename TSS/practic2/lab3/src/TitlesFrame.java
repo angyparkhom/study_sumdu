@@ -17,7 +17,11 @@ public class TitlesFrame
     setSize(350, 350);
     setLocationRelativeTo(null);
   }
-  
+
+    /**
+     * Starts the application
+     * @param args Standard array of String parameters. It's not used in this method.
+     */
   public static void main(String[] args)
   {
     SwingUtilities.invokeLater(new Runnable()
